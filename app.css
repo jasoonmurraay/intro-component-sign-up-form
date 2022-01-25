@@ -1,0 +1,158 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url(images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section1 {
+    color: white;
+    width: 45%;
+}
+
+.header {
+    width: 100%;
+    font-size: 3rem;
+    line-height: 3.5rem;
+}
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.card1 {
+    color: white;
+    background-color: hsl(248, 32%, 49%);
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+}
+
+span {
+    font-weight: 700;
+}
+
+.card2 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.card2Content {
+    padding: 5%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+input, button {
+    font-family: 'Poppins', sans-serif;
+}
+
+.input {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 1px solid hsl(246, 25%, 77%);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    border: none;
+}
+
+input:focus {
+    border: none;
+    outline: none;
+}
+
+
+.firstName, .lastName, .email, .password {
+    padding-left: 1rem;
+    font-weight: 500;
+}
+
+.fnErrorMsg, .lnErrorMsg, .emailErrorMsg, .pwErrorMsg {
+    color: hsl(0, 100%, 74%);
+    font-size: 10px;
+    text-align: right;
+    line-height: 0.001rem;
+    padding-bottom: 0.5rem;
+}
+
+button {
+    margin-top: 0.5rem;
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: hsl(154, 65%, 68%);
+}
+
+.termsServices {
+    text-align: center;
+    color: hsl(246, 25%, 77%);
+    font-size: 12px;
+    margin-top: 2rem;
+}
+
+a {
+    color: hsl(0, 100%, 74%);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.fnErrorMsg, .lnErrorMsg, .emailErrorMsg, .pwErrorMsg, .fnErrorIcon, .lnErrorIcon, .emailErrorIcon, .pwErrorIcon {
+    display: none;
+}
+
+@media (max-width: 932px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+    }
+    .section1 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .header {
+        font-size: 32px;
+        line-height: 2rem;
+    }
+    .section2 {
+        width: 100%;
+    }
+    .card1 {
+        padding: 0 2.5rem;
+    }
+    .termsServices {
+        margin-top: 1rem;
+    }
+}
